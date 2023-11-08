@@ -8,7 +8,7 @@ h1{
         position: absolute;
         padding: 10px;   
         transform: translate(-50%, -50%);
-        top: 32%;
+        top: 40%;
   left: 50%;  
 }
 h2{
@@ -17,7 +17,7 @@ h2{
         position: absolute;
         padding: 10px;   
         transform: translate(-50%, -50%);
-        top: 47%;
+        top: 53%;
   left: 50%;  
 }
 
@@ -151,17 +151,50 @@ body {
     text-transform: none;
 }
 
+h5{
+    font-size: 15px;
+    font-style: bold;
+}
+
 .row {
     display: flex;
     justify-content: space-between;
+}
+
+.row2{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
 }
 
 .oglasavanja {
     background-color: rgb(181,154,128,0.5);
     border: 1px solid #484651;
     width: 400px;
-    padding: 16px;
+    padding-bottom: 70px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
     
+}
+
+.oglasavanja2 {
+    background-color: rgb(181,154,128,0.5);
+    border: 1px solid #484651;
+    width: 400px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 25px;;
+
+}
+
+#tv{
+    margin-left: 180px;
+}
+
+#rad{
+    margin-right: 180px;;
 }
 
 
