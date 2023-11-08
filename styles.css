@@ -1,11 +1,26 @@
 .header-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   position: relative;
+   text-align: center;
 }
-body{
-    font-family: "Trirong", serif;
+h1{
+    color: rgb(181,154,128,0.7);
+    font-size: 95px;
+        position: absolute;
+        padding: 10px;   
+        transform: translate(-50%, -50%);
+        top: 32%;
+  left: 50%;  
 }
+h2{
+    color: rgb(181,154,128,0.7);
+    font-size: 25px;
+        position: absolute;
+        padding: 10px;   
+        transform: translate(-50%, -50%);
+        top: 47%;
+  left: 50%;  
+}
+
 .main-container {
     display: flex;
     justify-content: space-between;
@@ -26,9 +41,9 @@ body{
 body {
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0px;
-    padding: 0px; 
+    font-family: "Trirong", serif; 
     background-image: url('pok.jpg');
+    font-family: "Trirong", serif;
 }
 
 /* Add a black background color to the top navigation */
@@ -61,21 +76,74 @@ body {
 
 .logo {
     float: left;
-    width: fit-content;
-    height: 48px;
+    width: 70px;
+    height: 80px;
+    padding-left: 20px;
 
 }
 
 .partnerske-firme {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    background-color: white;
+    padding: 20px;
+    background-color: #172027;
 }
 
 .partnerska-slika {
-    width: 65px;
-    height: auto;
+    width: auto;
+}
+
+#bingo{
+    height: 30px;
+    padding-right: 20px;
+}
+
+#dm{
+    height: 30px;
+    padding-right: 20px;
+}
+#pasa{
+    height: 30px;
+    padding-right: 20px;
+}
+
+#oslobodjenje{
+    height: 30px;
+    padding-right: 20px;
+}
+#binbin{
+    height: 40px;
+    padding-right: 20px;
+}
+#ovako{
+    height: 40px;
+    padding-right: 30px;
+    width: 50px;
+}
+
+#meggle{
+    height: 40px;
+    padding-right: 20px;
+}
+#bht{
+    height: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+#sarajevo{
+    height: 60px;
+    padding-right: 20px;
+}
+
+#bimal{
+    height: 30px;
+}
+
+#dvogled{
+    opacity: 50%;
+    height: 800px;
+    width: 100%;
 }
 
 .info-box--standard-centered .info-box-content .info-box-title {
@@ -89,10 +157,11 @@ body {
 }
 
 .oglasavanja {
-    background-color: rgb(163, 157, 172);
+    background-color: rgb(181,154,128,0.5);
     border: 1px solid #484651;
     width: 400px;
     padding: 16px;
+    
 }
 
 
