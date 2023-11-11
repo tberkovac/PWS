@@ -16,7 +16,6 @@
         <a href="#news">News</a>
         <a href="#about">About</a>
         <a class="active" href="#home">Home</a>
-    </div>
     
     <div class="header-container">
         <img id="dvogled" src="dvogled.jpg">
@@ -99,6 +98,11 @@
             </div>
         </div>
     </div>
+    <div id="brojac">
+        <div id="p"><p>BROJ<br> POSJETA</p></div>
+        <div id="vvv"><p id="visitCounter">0</p></div>
+    </div>
+
     <div class="partnerske-firme">
         <img id="bingo" src="bingo.png" alt="bingo slika">
         <img id="dm" src="dm.png" alt="dm firma">
@@ -111,6 +115,21 @@
         <img id="sarajevo" src="sarajevo.png" alt="sarajevo osiguranje slika">
         <img id="bimal" src="bimal.png" alt="bimal slika">
     </div>
+
+    <script>
+        function getVisitCount() {
+          return localStorage.getItem("visitCount") || 0;
+        }
+    
+        function incrementVisitCount() {
+          let visitCount = getVisitCount();
+          visitCount++;
+          localStorage.setItem("visitCount", visitCount);
+          document.getElementById("visitCounter").textContent = visitCount;
+        }
+    
+        window.onload = incrementVisitCount;
+      </script>
     
 </body>
 
