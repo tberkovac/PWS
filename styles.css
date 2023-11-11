@@ -1,159 +1,235 @@
-.header-container {
-   position: relative;
-   text-align: center;
-}
-h1{
-    color: rgb(181,154,128,0.7);
-    font-size: 95px;
-        position: absolute;
-        padding: 10px;   
-        transform: translate(-50%, -50%);
-        top: 40%;
-  left: 50%;  
-}
-h2{
-    color: rgb(181,154,128,0.7);
-    font-size: 25px;
-        position: absolute;
-        padding: 10px;   
-        transform: translate(-50%, -50%);
-        top: 53%;
-  left: 50%;  
+.meni{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    background-color: #0b1115;
+    text-align: center;
 }
 
-#brojac{
-    color:white;
+img{
+    padding-top: 0;
+    width: 90px;
+    height: 80px;
+}
+
+.meni a{
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.meni a:hover{
+   background-color:rgb(181,154,128,0.7);
+}
+
+.meni a.active{
+    background-color:rgb(181,154,128);
+}
+
+.pocetni{
+    height: 900px;
+    background-image: url('pok.jpg');
+}
+
+#dvogled{
+    height: 900px;
+    opacity: 50%;
+    width: 100%;
+}
+
+#naslov1 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(254,254,254, 0.5);
+}
+
+h2{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    color: rgb(254,254,254, 0.7);
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+body{
+    font-family: "Trirong", serif;
+}
+
+.onama{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1c2c34;
+  
+}
+
+#pasus{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 55%;
+    padding-right: 100px;
+    font-style: italic;
+    opacity: 70%;
+  
+}
+
+#naslov2{
+    color: rgb(181,154,128);
+    font-size: 40px;
+    padding-left: 50px;
+    padding-top: 50px;
+
+}
+
+#najuspjesnija{
+    width: 500px;
+    height: 300px;
+    padding-bottom: 20px;
+}
+
+h3{
+    padding-top: 100px;
+    font-size: 30px;
+    color: rgb(254,254,254,0.7);
+}
+
+#kampanja{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.nudimo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #304955;
+    
+}
+
+#naslov3{
+    font-size: 50px;
+    color: rgb(181,154,128);;
+}
+
+.row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.row2{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 20px;
-    height: 100px;
-    padding: 0;
+    margin-bottom: 50px;
 }
 
-#p{
-    font-weight: bold;
-    text-align: center;
-    font-size: 20px;
-    width: 30%;
-    background-color: #333;
+.oglas{
+    width: 300px;
+    margin-left: 60px;
+    background-color: rgb(181,154,128, 0.7);
+    padding: 20px;
 }
 
-#vvv{
-    background-color: rgb(181,154,128,0.7);
-    font-size: 30px;
-    width: 70%;
-    text-align: center;
+.ikona{
+    width: 50px;
+    height: 50px;
 }
 
-.main-container {
+.preuzmite{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
 }
 
-.image-style {
-    width: 200px;
-    height: 200px;
-    border: 1px solid green;
-}
-
-.left-container {
-    border: 1px solid brown;
-}
-
-
-body {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('pok.jpg');
-    font-family: "Trirong", serif; 
-    font-family: "Trirong", serif;
-}
-
-
-.topnav {
-    background-color: #333;
-    overflow: hidden;
-}
-
-
-.topnav a {
-    float: right;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-
-.topnav a.active {
-    background-color:rgb(181,154,128,0.7);
+#cijene{
+    font-size: 20px;
     color: white;
 }
 
-.logo {
-    float: left;
-    width: 70px;
+.pdf{
+    width: 50px;
     height: 50px;
-    padding-left: 20px;
 }
-#bih{
-        float: right;
-        height: 45px;
-        width: 45px;
-        padding: 3px 10px;
-    }
-    #uk{
-        float: right;
-        height: 50px;
-        width: 50px;
-        padding-right:10px;
-    }
+
+.linkovi{
+    text-decoration: none;
+    color: white;
+}
+
+.brojac{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    justify-content: space-evenly;
+    color: white;
+    border: 1px solid rgb(181,154,128);
+}
+
+#broj{
+    background-color: #304955;
+    width: 60%;
+    text-align: center;
+    font-size: 50px;
+    
+}
+
+#br{
+    background-color: #263b45;
+    width: 40%;
+    text-align: center;
+    font-size: 30px;
+}
+
 .partnerske-firme {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    height: 70px;
     background-color: #172027;
 }
 
-.partnerska-slika {
-    width: auto;
-}
 
 #bingo{
-    height: 30px;
+    padding-left: 20px;
+    height: 40px;
     padding-right: 20px;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 #dm{
-    height: 30px;
+    height: 40px;
+    width: 50px;
     padding-right: 20px;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 #pasa{
-    height: 30px;
+    height: 40px;
+    width: 100px;
     padding-right: 20px;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 #oslobodjenje{
-    height: 30px;
+    height: 40px;
+    width: 120px;
     padding-right: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 #binbin{
-    height: 40px;
+    height: 50px;
     padding-right: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 #ovako{
     height: 40px;
@@ -163,15 +239,15 @@ body {
 }
 
 #meggle{
-    height: 40px;
+    height: 50px;
     padding-right: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 #bht{
     height: 20px;
     padding-right: 20px;
     padding-top: 10px;
-    padding-top: 20px;
+    padding-top: 25px;
 }
 
 #sarajevo{
@@ -182,93 +258,6 @@ body {
 #bimal{
     height: 30px;
     padding-top: 20px;
-}
-
-#dvogled{
-    opacity: 50%;
-    height: 800px;
-    width: 100%;
-}
-
-.info-box--standard-centered .info-box-content .info-box-title {
-    font-size: 10px !important;
-    text-transform: none;
-}
-
-h5{
-    font-size: 15px;
-    font-style: bold;
-}
-
-.row {
-    display: flex;
-    justify-content: space-between;
-}
-
-.row2{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
-}
-
-.oglasavanja {
-    background-color: rgb(181,154,128,0.5);
-    border: 1px solid #484651;
-    width: 400px;
-    padding-bottom: 70px;
-    padding-left: 20px;
-    padding-top: 20px;
     padding-right: 20px;
-    
 }
 
-.oglasavanja2 {
-    background-color: rgb(181,154,128,0.5);
-    border: 1px solid #484651;
-    width: 400px;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 25px;;
-
-}
-
-#tv{
-    margin-left: 200px;
-}
-
-#rad{
-    margin-right: 200px;;
-}
-
-
-/* For large screens (lg) and medium screens (md) */
-@media (min-width: 992px) {
-    .custom-col-lg-4 {
-        width: 33.333%;
-    }
-
-    .custom-col-md-6 {
-        width: 50%;
-    }
-}
-
-/* For small screens (sm) */
-@media (max-width: 991px) {
-    .custom-col-sm-6 {
-        width: 50%;
-    }
-}
-
-/* For extra small screens (xs) */
-@media (max-width: 767px) {
-    .custom-col-xs-12 {
-        width: 100%;
-    }
-}
-
-
-.slikica{
-    width:60px;
-    height: 60px;
-}
